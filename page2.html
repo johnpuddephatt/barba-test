@@ -1,0 +1,41 @@
+<html>
+
+<head>
+  <style>
+    #app>* {
+      background-color: whitesmoke;
+      margin: 2em;
+      text-align: center;
+      padding: 2em;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="app" data-barba="wrapper" role="document">
+
+    <header>My header content</header>
+
+    <main data-barba="container" data-barba-namespace="home">
+      <h1>Page 2</h1>
+      <a href="index.html">Go back to home</a>
+    </main>
+
+    <footer>My footer content</footer>
+
+  </div>
+
+  <!-- load barba.js (this will use the latest UMD version of the library) -->
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://unpkg.com/@barba/css"></script>
+  <!-- load your scripts -->
+  <script src="script.js"></script>
+
+</body>
+
+
+
+
+</html>
