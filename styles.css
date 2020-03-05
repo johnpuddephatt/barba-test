@@ -1,0 +1,36 @@
+body>* {
+  background-color: whitesmoke;
+  margin: 2em;
+  text-align: center;
+  padding: 2em;
+  font-family: sans-serif;
+}
+
+/* transition active state (same for leave and enter) */
+.fade-leave-active {
+  transition: opacity 0.25s ease;
+}
+
+.fade-enter-active {
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+/* initial state */
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-enter {
+  transform: translateY($small-spacing);
+  opacity: 0;
+}
+
+/* ending state */
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-to {
+  transform: translateY(0);
+  opacity: 1;
+}
