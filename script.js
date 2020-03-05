@@ -1,6 +1,6 @@
 barba.use(barbaCss);
-barba.init(
+barba.init({
   transitions: [{
     name: 'fade'
-  }]
-);
+  }];
+});
